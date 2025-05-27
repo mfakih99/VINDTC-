@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VinDetect.ai — Re-VINned Stolen Car Detection</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33YH30VN04"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}  
+    gtag('js', new Date());
+    gtag('config', 'G-33YH30VN04');
+  </script>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Vindetect.ai is the first AI-driven VIN detection solution for government agencies to uncover stolen, synthetic, ghost, and non-OEM VINs. Sign up for early access." />
+  <meta name="keywords" content="VIN detection, stolen vehicles, AI security, synthetic VINs, government vehicle tracking" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vindetect.ai/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="VinDetect.ai — Coming Soon" />
+  <meta property="og:description" content="Sign up for early access to the first AI-driven VIN detection tool for government agencies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vindetect.ai/" />
+  <meta property="og:image" content="https://vindetect.ai/og-image.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VinDetect.ai — Coming Soon" />
+  <meta name="twitter:description" content="Sign up for early access to the first AI-driven VIN detection tool for government agencies." />
+  <meta name="twitter:image" content="https://vindetect.ai/og-image.png" />
+  <!-- Reset & Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Vanilla Tilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0a0f1a; color: #fff; overflow: auto; position: relative; min-height: 100vh; line-height: 1.7; }
+    #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
+    .container { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; padding: 80px 20px; text-align: center; }
+    h1 { font-size: 5rem; font-weight: 700; background: linear-gradient(90deg, #8e44ad, #3498db); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; letter-spacing: 1px; }
+    .logo-letter { color: #e84393; }
+    .subtitle { font-size: 1.9rem; font-weight: 500; margin-bottom: 1.1rem; opacity: 0.95; letter-spacing: 0.2px; }
+    .tagline { font-size: 1.6rem; font-weight: 700; color: #3498db; margin-bottom: 22px; letter-spacing: 0.1px; }
+    .description { font-size: 1.3rem; font-weight: 400; color: #f3f6fa; opacity: 0.92; margin-bottom: 44px; letter-spacing: 0.1px; }
+    form { margin-bottom: 60px; }
+    input[type="email"] { padding: 18px 24px; border: none; border-radius: 8px; width: 320px; font-size: 1.2rem; background: #ffffff; color: #0a0f1a; outline: none; }
+    input::placeholder { color: #888; }
+    button { padding: 18px 48px; border: none; border-radius: 8px; background: #e84393; font-size: 1.2rem; font-weight: 600; color: #0a0f1a; cursor: pointer; transition: background 0.3s, transform 0.3s; }
+    button:hover { background: #d63031; transform: translateY(-4px); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns, 2 rows */
+      gap: 30px;
+      margin-bottom: 60px;
+      max-width: 1500px; /* Increased from 1200px for wider boxes */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .feature-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.4s ease;
+      cursor: pointer;
+      max-width: 440px; /* Wider cards */
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .feature-card i { font-size: 2.5rem; color: #3498db; margin-bottom: 20px; display: block; }
+    .feature-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; letter-spacing: 0.1px; color: #fff; }
+    .feature-card p { font-size: 1.13rem; font-weight: 400; color: #e2e8f0; line-height: 1.7; letter-spacing: 0.02em; }
+    @media (max-width: 1500px) {
+      .features {
+        max-width: 100vw;
+      }
+      .feature-card {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 1000px) {
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+    .footer { font-size: 1.08rem; opacity: 0.8; }
+    /* Mobile-first improvements */
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      .container { padding: 12px 1vw; max-width: 100vw; }
+      h1 { font-size: 2.1rem; margin-bottom: 0.2rem; letter-spacing: 0.5px; }
+      .subtitle { font-size: 1.08rem; margin-bottom: 0.5rem; }
+      .tagline { font-size: 0.98rem; margin-bottom: 10px; }
+      .description { font-size: 0.98rem; margin-bottom: 16px; }
+      #vin-widget {
+        padding: 8px 1vw 8px 1vw;
+        max-width: 96vw;
+        margin: 10px 0 8px 0;
+        border-radius: 8px;
+      }
+      #vin-widget h2 { font-size: 1.08rem !important; margin-bottom: 10px !important; }
+      #vin-form { flex-direction: column !important; gap: 8px !important; align-items: stretch !important; margin-bottom: 0 !important; }
+      #vin-input { width: 100% !important; min-width: 0 !important; font-size: 0.98rem !important; padding: 10px 10px !important; }
+      #vin-form button { width: 100%; font-size: 0.98rem; padding: 10px 0; margin-top: 0; }
+      form#email-form {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 14px;
+        background: rgba(52,152,219,0.10);
+        border-radius: 8px;
+        box-shadow: 0 2px 12px 0 rgba(52,152,219,0.10);
+        padding: 8px 1vw 10px 1vw;
+        max-width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      form#email-form input[type="email"] {
+        width: 100%;
+        font-size: 0.98rem;
+        padding: 12px 12px;
+        margin-bottom: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border: 1.5px solid #8e44ad;
+        background: #fff;
+        color: #0a0f1a;
+        box-shadow: 0 1px 4px 0 rgba(52,152,219,0.08);
+        text-align: center;
+      }
+      form#email-form button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+        margin-top: 0;
+        border-radius: 8px;
+        background: linear-gradient(90deg,#8e44ad,#3498db);
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        box-shadow: 0 2px 8px 0 rgba(52,152,219,0.10);
+        transition: background 0.3s, transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      form#email-form button:active {
+        background: #d63031;
+      }
+      .features { grid-template-columns: 1fr !important; gap: 10px; margin-bottom: 14px; }
+      .feature-card {
+        min-height: unset;
+        padding: 14px 8px;
+        font-size: 0.98rem;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.05);
+      }
+      .feature-card i { font-size: 1.5rem; margin-bottom: 8px; }
+      .feature-card h3 { font-size: 0.98rem; margin-bottom: 6px; }
+      .feature-card p { font-size: 0.93rem; }
+      .footer { font-size: 0.95rem; padding-bottom: 10px; margin-top: 8px; }
+      table { font-size: 0.92rem !important; }
+      td { word-break: break-word; }
+      #vin-input,
+      form#email-form input[type="email"] {
+        text-align: center;
+      }
+    }
+    @media (max-width: 400px) {
+      h1 { font-size: 1.05rem; }
+      .container { padding: 4px 1vw; }
+      #vin-widget { padding: 4px 1vw; }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1><span class="logo-letter">V</span>in<span class="logo-letter">D</span>etect.ai</h1>
+    <p class="subtitle">AI-powered VIN anomaly detection for government agencies.</p>
+    <p class="tagline">The first solution of its kind: pioneering AI-driven VIN security.</p>
+    <p class="description">This tool empowers auto theft task forces to locate stolen vehicles with altered VINs quickly and accurately.</p>
+
+    <!-- VIN Lookup Widget -->
+    <div id="vin-widget" style="margin: 40px 0; padding: 32px 24px; background: rgba(52,152,219,0.10); border-radius: 16px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 6px 32px 0 rgba(52,152,219,0.10);">
+      <h2 style="font-size: 1.7rem; font-weight: 700; color: #8e44ad; margin-bottom: 18px; letter-spacing: 1px;">
+        <span style="vertical-align: middle; margin-right: 8px;"><i class="fas fa-search"></i></span>Run Ai VIN Analysis
+      </h2>
+      <form id="vin-form" style="display: flex; flex-direction: row; gap: 12px; align-items: center; justify-content: center; margin-bottom: 0;">
+        <input type="text" id="vin-input" placeholder="Enter VIN" maxlength="17" minlength="11" required
+          style="padding: 16px 18px; border-radius: 8px; border: 1.5px solid #8e44ad; width: 480px; font-size: 1.1rem; background: #fff; color: #0a0f1a; letter-spacing: 2px; font-family: inherit;">
+        <button type="submit"
+          style="padding: 14px 32px; border-radius: 8px; background: linear-gradient(90deg,#8e44ad,#3498db); color: #fff; font-weight: 700; font-size: 1.1rem; border: none; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(52,152,219,0.10); transition: background 0.3s, transform 0.3s;">
+          <i class="fas fa-search" style="margin-right: 6px;"></i>Lookup
+        </button>
+      </form>
+      <div id="vin-result" style="margin-top: 28px; text-align: left; min-height: 48px; display: none;"></div>
+    </div>
+
+    <!-- Email Sign-Up -->
+    <form id="email-form">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Request More Info</button>
+    </form>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-user-secret"></i>
+        <h3>Ghost / Synthetic VIN Identification</h3>
+        <p>Pinpoint hidden or altered VINs and identify non-OEM synthetic VINs accurately to stop auto theft.</p>
+      </div>
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-bolt"></i>
+        <h3>Real-Time Alerts</h3>
+        <p>Receive instant notifications on suspicious VIN events—e.g., temp tags issued for synthetic VINs.</p>
+      </div>
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-plug"></i>
+        <h3>Easy API Integration</h3>
+        <p>Seamlessly integrate with existing systems via secure REST endpoints.</p>
+      </div>
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-camera"></i>
+        <h3>LPR Camera Integration</h3>
+        <p>Seamlessly integrate with License Plate Recognition cameras for automated VIN scanning.</p>
+      </div>
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-database"></i>
+        <h3>DMV Database AI Scan</h3>
+        <p>Run our AI across existing DMV VIN records to flag vehicles registered with synthetic VINs.</p>
+      </div>
+      <div class="feature-card" data-tilt>
+        <i class="fas fa-redo"></i>
+        <h3>Re-VINned Car Detection</h3>
+        <p>Identify vehicles that have had their VINs tampered, re-assigned, or cloned to mask their true identities.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 VinDetect.ai. All rights reserved.
+      <br>
+      Contact us: <a href="mailto:info@vindetect.ai" style="color:#81e6d9;">info@vindetect.ai</a>
+    </div>
+  </div>
+
+  <!-- Initialize Particles & Tilt & Webhook Submission -->
+  <script>
+    particlesJS('particles-js', { particles: { number: { value: 60 }, color: { value: '#8e44ad' }, shape: { type: 'circle' }, opacity: { value: 0.35 }, size: { value: 4 }, line_linked: { enable: true, distance: 150, color: '#3498db', opacity: 0.2, width: 1 } }, interactivity: { events: { onhover: { enable: true, mode: 'repulse' } } }, retina_detect: true });
+    VanillaTilt.init(document.querySelectorAll('.feature-card'), { max: 15, speed: 400, glare: true, 'max-glare': 0.2 });
+
+    const form = document.getElementById('email-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = form.elements['email'].value;
+      // Fetch geolocation based on IP
+      fetch('https://ipapi.co/json/')
+        .then(res => res.json())
+        .then(loc => {
+          const data = new URLSearchParams();
+          data.append('email', email);
+          data.append('domain', 'VinDetect.ai');
+          data.append('timestamp', new Date().toLocaleString('en-US', { timeZone: 'America/New_York', hour12: true }));
+          data.append('location', `${loc.city}, ${loc.region}, ${loc.country_name}`);
+          return fetch('https://hooks.zapier.com/hooks/catch/12705314/27dagdz/', {
+            method: 'POST',
+            mode: 'no-cors',
+            body: data
+          });
+        })
+        .then(() => {
+          const thankYou = document.createElement('p');
+          thankYou.style.color = '#81e6d9';
+          thankYou.style.fontSize = '1.25rem';
+          thankYou.style.marginTop = '20px';
+          thankYou.style.marginBottom = '40px';
+          thankYou.textContent = "Thanks! We'll keep you updated.";
+          form.replaceWith(thankYou);
+        })
+        .catch(() => {
+          alert('Oops! Something went wrong. Please try again.');
+        });
+    });
+
+    // VIN Lookup Widget logic
+    const vinForm = document.getElementById('vin-form');
+    const vinInput = document.getElementById('vin-input');
+    const vinResult = document.getElementById('vin-result');
+    if (vinForm) {
+      vinForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const vin = vinInput.value.trim();
+        vinResult.style.display = 'block';
+        vinResult.innerHTML = `
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span class="fa fa-spinner fa-spin" style="color:#3498db;font-size:1.5rem;"></span>
+            <span style="color:#3498db;font-size:1.1rem;">Looking up VIN...</span>
+          </div>
+        `;
+        fetch(`https://api.boltbids.ai/VINDetect?vin=${encodeURIComponent(vin)}`)
+          .then(res => res.json())
+          .then(data => {
+            // Visual response
+            if (data && (data.error_code === 91 || data.error_code === "91")) {
+              vinResult.innerHTML = `
+                <div style="display:flex;align-items:center;gap:14px;background:rgba(232,67,147,0.12);border-radius:8px;padding:18px 18px 18px 14px;">
+                  <span class="fa fa-exclamation-triangle" style="color:#e84393;font-size:2rem;"></span>
+                  <div>
+                    <div style="color:#e84393;font-weight:700;font-size:1.15rem;margin-bottom:4px;">Ghost / Synthetic VIN Detected</div>
+                    <div style="color:#fff;opacity:0.85;">${data.error_msg ? data.error_msg : "Contact us for more info."}</div>
+                  </div>
+                </div>
+              `;
+            } else if (data) {
+              vinResult.innerHTML = `
+                <div style="display:flex;align-items:center;gap:14px;background:rgba(52,152,219,0.12);border-radius:8px;padding:18px 18px 18px 14px;">
+                  <span class="fa fa-check-circle" style="color:#81e6d9;font-size:2rem;"></span>
+                  <div>
+                    <div style="color:#81e6d9;font-weight:700;font-size:1.15rem;margin-bottom:4px;">VIN is Valid</div>
+                    <div style="color:#fff;opacity:0.85;">No ghost/synthetic activity detected.</div>
+                  </div>
+                </div>
+                <div style="margin-top:18px;">${renderVinValidFields(data)}</div>
+              `;
+            } else {
+              vinResult.innerHTML = '<span style="color:#e84393;">No data found for this VIN.</span>';
+            }
+          })
+          .catch(() => {
+            vinResult.innerHTML = `
+              <div style="display:flex;align-items:center;gap:14px;background:rgba(232,67,147,0.12);border-radius:8px;padding:18px 18px 18px 14px;">
+                <span class="fa fa-times-circle" style="color:#e84393;font-size:2rem;"></span>
+                <div>
+                  <div style="color:#e84393;font-weight:700;font-size:1.15rem;margin-bottom:4px;">Error fetching VIN data</div>
+                  <div style="color:#fff;opacity:0.85;">Please try again.</div>
+                </div>
+              </div>
+            `;
+          });
+      });
+    }
+    vinInput.addEventListener('input', function() {
+      vinResult.style.display = 'none';
+    });
+
+    // Render variable API response as a table
+    function renderVinResponse(data) {
+      if (!data || typeof data !== 'object') {
+        return '<span style="color:#e84393;">No data found for this VIN.</span>';
+      }
+      let html = '<table style="width:100%; border-collapse:collapse; background:rgba(255,255,255,0.03);margin-top:8px;">';
+      for (const key in data) {
+        if (Object.prototype.hasOwnProperty.call(data, key)) {
+          html += `<tr>
+            <td style="padding:8px 12px; border-bottom:1px solid #222; color:#8e44ad; font-weight:600;vertical-align:top;width:140px;">${key}</td>
+            <td style="padding:8px 12px; border-bottom:1px solid #222; color:#fff;vertical-align:top;">${formatValue(data[key])}</td>
+          </tr>`;
+        }
+      }
+      html += '</table>';
+      return html;
+    }
+
+    function formatValue(val) {
+      if (val === null || val === undefined) return '<i>None</i>';
+      if (typeof val === 'object') return `<pre style="color:#81e6d9;">${JSON.stringify(val, null, 2)}</pre>`;
+      return String(val);
+    }
+
+    // Only show year, make, model for valid VINs
+    function renderVinValidFields(data) {
+      if (!data || typeof data !== 'object') {
+        return '<span style="color:#e84393;">No data found for this VIN.</span>';
+      }
+      const fields = ['year', 'make', 'model'];
+      let html = '<table style="width:100%; border-collapse:collapse; background:rgba(255,255,255,0.03);margin-top:8px;">';
+      let found = false;
+      for (const key of fields) {
+        if (data[key] !== undefined) {
+          found = true;
+          html += `<tr>
+            <td style="padding:8px 12px; border-bottom:1px solid #222; color:#8e44ad; font-weight:600;vertical-align:top;width:140px;">${key.charAt(0).toUpperCase() + key.slice(1)}</td>
+            <td style="padding:8px 12px; border-bottom:1px solid #222; color:#fff;vertical-align:top;">${formatValue(data[key])}</td>
+          </tr>`;
+        }
+      }
+      html += '</table>';
+      if (!found) {
+        html = '<span style="color:#e84393;">No year, make, or model data found for this VIN.</span>';
+      }
+      return html;
+    }
+  </script>
+</body>
+</html>
