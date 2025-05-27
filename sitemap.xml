@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://vindetect.ai/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,84 +15,84 @@
     <!-- Main Sections (Anchors on Homepage) -->
     <url>
         <loc>https://vindetect.ai/#hero</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#problem</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#solution</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#technology</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#data</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#standards</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#safety-impact</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#benefits</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#testimonials</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#implementation</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#faq</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/#contact</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -100,14 +100,14 @@
     <!-- Legal Pages -->
     <url>
         <loc>https://vindetect.ai/privacy-policy.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/terms-of-service.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -115,70 +115,70 @@
     <!-- Additional Resources (if they exist) -->
     <url>
         <loc>https://vindetect.ai/about</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/services</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/case-studies</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/blog</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/resources</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/demo</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/pricing</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/support</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/documentation</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/api</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -186,28 +186,28 @@
     <!-- Industry-Specific Landing Pages -->
     <url>
         <loc>https://vindetect.ai/law-enforcement</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/insurance</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/automotive-dealers</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/government</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -215,14 +215,14 @@
     <!-- News and Updates -->
     <url>
         <loc>https://vindetect.ai/news</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/press-releases</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -230,14 +230,14 @@
     <!-- Security and Compliance -->
     <url>
         <loc>https://vindetect.ai/security</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/compliance</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -245,23 +245,23 @@
     <!-- Career and Company -->
     <url>
         <loc>https://vindetect.ai/careers</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/team</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <url>
         <loc>https://vindetect.ai/investors</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-05-27</lastmod>
         <changefreq>quarterly</changefreq>
         <priority>0.3</priority>
     </url>
 
-</urlset> 
+</urlset>

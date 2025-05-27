@@ -106,22 +106,18 @@
     <link rel="stylesheet" href="styles.css">
     
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-33YH30VN04"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        gtag('config', 'G-33YH30VN04');
     </script>
     
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
-    
-    <!-- Bing Webmaster Tools Verification -->
-    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
-    
-    <!-- Yandex Verification -->
-    <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE">
+    <!-- Verification Codes -->
+    <meta name="google-site-verification" content="<!-- YOUR_GOOGLE_VERIFICATION_CODE -->" />
+    <meta name="msvalidate.01" content="<!-- YOUR_BING_VERIFICATION_CODE -->" />
+    <meta name="yandex-verification" content="<!-- YOUR_YANDEX_VERIFICATION_CODE -->" />
     
     <!-- Enhanced Structured Data for SEO -->
     <script type="application/ld+json">
@@ -531,10 +527,8 @@
             color: #60a5fa;
             background: rgba(59, 130, 246, 0.1);
         }
-        
-        .nav-blur .logo {
-            /* Removed filter to show actual logo colors */
-        }
+
+        /* Removed empty .nav-blur .logo ruleset */
         
         .process-step {
             position: relative;
@@ -565,6 +559,7 @@
         #ai-demo {
             position: relative;
             overflow: hidden;
+            /* Removed ring and ring-color properties. Apply as Tailwind classes if needed e.g. class="ring-3 ring-blue-500" */
         }
         
         .status-indicator {
@@ -748,8 +743,6 @@
         /* Enhanced input focus states */
         input:focus, textarea:focus, select:focus {
             outline: none;
-            ring: 3px;
-            ring-color: rgba(99, 102, 241, 0.3);
             border-color: #6366f1;
             transform: scale(1.02);
         }
