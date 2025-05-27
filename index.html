@@ -319,8 +319,8 @@
         }
         .hero-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 25%, #1e40af 50%, #312e81 75%, #1e1b4b 100%);
-            min-height: 75vh;
-            min-height: 75dvh; /* Dynamic viewport height for mobile */
+            min-height: 90vh;
+            min-height: 90dvh; /* Dynamic viewport height for mobile */
             display: flex;
             align-items: center;
             position: relative;
@@ -1033,36 +1033,36 @@
             
             /* Hero section mobile optimization */
             .hero-gradient {
-                min-height: 70vh;
-                min-height: 70dvh;
-                padding-top: 70px;
-                padding-bottom: 0.5rem;
+                min-height: 85vh;
+                min-height: 85dvh;
+                padding-top: 80px;
+                padding-bottom: 2rem;
             }
             
             .hero-gradient .grid {
-                gap: 2rem;
+                gap: 3rem;
                 grid-template-columns: 1fr;
             }
             
             .hero-gradient h1 {
                 font-size: 2.5rem !important;
                 line-height: 1.1 !important;
-                margin-bottom: 1rem !important;
+                margin-bottom: 2rem !important;
             }
             
             .hero-gradient p {
                 font-size: 1.125rem !important;
                 line-height: 1.6 !important;
-                margin-bottom: 1.5rem !important;
+                margin-bottom: 2.5rem !important;
             }
             
             /* Mobile button optimization */
             .hero-gradient button {
                 width: 100% !important;
                 min-width: auto !important;
-                padding: 1rem 2rem !important;
+                padding: 1.25rem 2rem !important;
                 font-size: 1.125rem !important;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
             
             /* Mobile stats grid */
@@ -1170,15 +1170,18 @@
         @media (max-width: 480px) {
             .hero-gradient h1 {
                 font-size: 2rem !important;
+                margin-bottom: 1.5rem !important;
             }
             
             .hero-gradient p {
                 font-size: 1rem !important;
+                margin-bottom: 2rem !important;
             }
             
             .hero-gradient button {
                 padding: 0.875rem 1.5rem !important;
                 font-size: 1rem !important;
+                margin-bottom: 1.5rem !important;
             }
             
             /* Ultra-compact cards */
@@ -1212,8 +1215,8 @@
         @media (max-height: 600px) and (orientation: landscape) {
             .hero-gradient {
                 min-height: auto;
-                padding-top: 80px;
-                padding-bottom: 2rem;
+                padding-top: 90px;
+                padding-bottom: 3rem;
             }
             
             .hero-gradient .min-h-\[80vh\] {
@@ -1222,12 +1225,12 @@
             
             .hero-gradient h1 {
                 font-size: 2rem !important;
-                margin-bottom: 0.5rem !important;
+                margin-bottom: 1rem !important;
             }
             
             .hero-gradient p {
                 font-size: 1rem !important;
-                margin-bottom: 1rem !important;
+                margin-bottom: 1.5rem !important;
             }
         }
         
@@ -1401,16 +1404,20 @@
             .hero-gradient {
                 padding-left: 0.75rem;
                 padding-right: 0.75rem;
+                padding-top: 90px;
+                padding-bottom: 2rem;
             }
             
             .hero-gradient h1 {
                 font-size: 1.75rem !important;
                 line-height: 1.1 !important;
+                margin-bottom: 1.5rem !important;
             }
             
             .hero-gradient p {
                 font-size: 0.875rem !important;
                 line-height: 1.5 !important;
+                margin-bottom: 2rem !important;
             }
             
             .hero-gradient button {
@@ -1638,7 +1645,7 @@
     <main id="main-content">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-gradient min-h-[75vh] flex items-center relative overflow-hidden py-6 lg:py-3" role="banner" aria-label="Main hero section">
+    <section id="hero" class="hero-gradient min-h-[90vh] flex items-center relative overflow-hidden py-12 lg:py-16" role="banner" aria-label="Main hero section">
         <div class="absolute inset-0 opacity-10">
             <div class="floating-particles"></div>
         </div>
@@ -1671,26 +1678,26 @@
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
-            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[50vh] lg:min-h-0">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[60vh] lg:min-h-0">
                 <div data-aos="fade-right" class="order-2 lg:order-1">
-                    <div class="inline-flex items-center gov-badge rounded-full px-4 lg:px-6 py-2 lg:py-3 mb-3 lg:mb-4 ai-glow text-xs lg:text-sm">
+                    <div class="inline-flex items-center gov-badge rounded-full px-4 lg:px-6 py-2 lg:py-3 mb-6 lg:mb-8 ai-glow text-xs lg:text-sm">
                         <i class="fas fa-shield-check text-blue-300 mr-2 lg:mr-3"></i>
                         <span class="text-white font-semibold tracking-wide">ADVANCED AI STOLEN VEHICLE IDENTIFICATION PLATFORM</span>
                         <div class="ml-2 lg:ml-3 w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                     </div>
                     
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-2 sm:mb-3 lg:mb-4 leading-tight text-container hero-title tracking-tight">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 sm:mb-8 lg:mb-10 leading-tight text-container hero-title tracking-tight">
                         Stop Vehicle Theft with
                         <span class="ai-gradient bg-gradient-to-r from-yellow-300 via-white to-yellow-300 bg-clip-text text-transparent animate-pulse block mt-1 sm:mt-2">
                             AI-Powered Detection
                         </span>
                     </h1>
                     
-                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-3 sm:mb-4 lg:mb-6 leading-relaxed font-light text-container hero-title">
+                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 lg:mb-12 leading-relaxed font-light text-container hero-title">
                         End the <strong>$8-9 billion</strong> vehicle theft epidemic. Our advanced AI instantly identifies <strong>fabricated VINs</strong>, <strong>ghost vehicles</strong>, and <strong>cloned identities</strong> that traditional systems miss—helping law enforcement recover stolen vehicles and dismantle criminal networks.
                     </p>
                     
-                    <div class="flex flex-col gap-2 sm:gap-3 lg:gap-4 mb-0">
+                    <div class="flex flex-col gap-4 sm:gap-6 lg:gap-8 mb-0">
                         <button onclick="smoothScrollToSection('contact')" 
                                 class="group relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white px-6 sm:px-8 lg:px-16 py-3 sm:py-4 lg:py-6 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg lg:text-xl hover:from-blue-700 hover:via-blue-800 hover:to-indigo-800 transform active:scale-95 sm:hover:scale-105 lg:hover:scale-110 sm:hover:-translate-y-1 lg:hover:-translate-y-2 transition-all duration-300 sm:duration-500 shadow-xl sm:shadow-2xl hover:shadow-blue-500/50 focus:outline-none focus:ring-4 focus:ring-blue-500/50 flex items-center justify-center w-full border-2 border-blue-400/30 hover:border-blue-300/60 min-h-[56px] sm:min-h-[64px] hero-cta-glow" 
                                 aria-label="Request a demo of VinDetect.ai">
@@ -1721,7 +1728,7 @@
                         </div>
                         
                 <div class="text-center order-1 lg:order-2" data-aos="fade-left">
-                    <div class="relative inline-block w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
+                    <div class="relative inline-block w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto mt-8 lg:mt-0">
                         <!-- Hero Visual Element -->
                         <div class="bg-slate-900/80 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-12 border-2 border-blue-500/30 shadow-xl sm:shadow-2xl hover:shadow-3xl transform active:scale-95 sm:hover:scale-105 transition-all duration-300 sm:duration-500 ai-glow group">
                             <div class="text-center">
@@ -1731,7 +1738,7 @@
                                 </p>
                                 
                                 <!-- Enhanced Stats Grid -->
-                                <div class="grid grid-cols-2 gap-2 sm:gap-4 lg:gap-8 text-center">
+                                <div class="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8 text-center mt-6 lg:mt-8">
                                     <div class="bg-green-500/10 rounded-lg sm:rounded-xl p-2 sm:p-4 lg:p-6 border border-green-500/20 group-hover:bg-green-500/20 group-hover:border-green-400/30 transition-all duration-300 shadow-lg">
                                         <div class="text-lg sm:text-2xl lg:text-4xl font-bold text-green-400 mb-1 lg:mb-2">
                                             <span class="counter" data-target="95">0</span>%
@@ -1771,7 +1778,7 @@
         </div>
         
         <!-- Scroll indicator -->
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
             <div class="flex flex-col items-center">
                 <span class="text-xs mb-1 hidden sm:block">More below</span>
                 <i class="fas fa-chevron-down text-lg"></i>
